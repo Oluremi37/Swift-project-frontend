@@ -1,0 +1,63 @@
+.dashboard-section {
+  padding: 100px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.dashboard-card {
+  width: 100%;
+  max-width: 700px;
+  background: #111;
+  border: 1px solid #222;
+  border-radius: 24px;
+  padding: 40px;
+  box-shadow: 0 0 30px rgba(255, 136, 0, 0.15);
+}
+
+.score-area {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.score-area h2 {
+  font-size: 80px;
+  color: #FF8800;
+  margin-bottom: 10px;
+}
+
+.score-area p {
+  color: #aaa;
+  font-size: 18px;
+}
+
+.metric {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.bar {
+  height: 10px;
+  background: #222;
+  border-radius: 999px;
+  margin-bottom: 25px;
+}
+
+.fill {
+  height: 100%;
+  background: #FF8800;
+  border-radius: 999px;
+}
+
+.fill-85 {
+  width: 85%;
+}
+
+.fill-62 {
+  width: 62%;
+}
+
+.fill-71 {
+  width: 71%;
+}

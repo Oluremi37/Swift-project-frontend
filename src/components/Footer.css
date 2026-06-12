@@ -1,0 +1,149 @@
+.hero-container,
+.features-container,
+.contact-container,
+.footer-container,
+.audit-container,
+.report-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer {
+  background: #080808;
+  border-top: 1px solid #1f1f1f;
+  padding-top: 80px;
+}
+
+.footer-container {
+  max-width: 1400px;
+  margin: auto;
+  padding: 0 8%;
+
+  display: flex;
+  justify-content: space-between;
+  gap: 80px;
+}
+
+.footer-brand {
+  max-width: 400px;
+}
+
+.footer-brand h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.footer-brand span {
+  color: #FF8800;
+}
+
+.footer-brand p {
+  color: #b3b3b3;
+  line-height: 1.8;
+}
+
+.footer-links {
+  display: flex;
+  gap: 80px;
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-column h4 {
+  color: white;
+  margin-bottom: 20px;
+}
+
+.footer-column a,
+.footer-column p {
+  color: #b3b3b3;
+  text-decoration: none;
+  margin-bottom: 12px;
+  transition: 0.3s;
+   word-break: break-word;
+}
+
+.footer-column a:hover {
+  color: #FF8800;
+}
+
+.footer-bottom {
+  text-align: center;
+  color: #888;
+  border-top: 1px solid #1f1f1f;
+  margin-top: 60px;
+  padding: 25px;
+}
+
+@media (max-width: 900px) {
+
+  .footer-container {
+    flex-direction: column;
+    gap: 50px;
+    padding: 0 20px;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .footer-brand {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .footer {
+    padding-top: 60px;
+  }
+
+  .footer-brand h2 {
+    font-size: 1.8rem;
+  }
+
+  .footer-brand p {
+    font-size: 0.95rem;
+  }
+
+  .footer-column h4 {
+    margin-bottom: 15px;
+  }
+
+  .footer-bottom {
+    margin-top: 40px;
+    padding: 20px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .footer-container {
+    padding: 0 15px;
+  }
+
+  .footer-brand h2 {
+    font-size: 1.5rem;
+  }
+
+  .footer-brand p,
+  .footer-column a,
+  .footer-column p {
+    font-size: 0.9rem;
+  }
+
+  .footer-links {
+    gap: 30px;
+  }
+
+  .footer-bottom {
+    font-size: 0.85rem;
+  }
+}
