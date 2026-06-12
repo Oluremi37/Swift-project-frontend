@@ -66,6 +66,47 @@
 .nav-btn:hover {
   transform: translateY(-3px);
 }
+.hamburger {
+  display: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+
+  .hamburger {
+    display: block;
+  }
+
+  
+
+  .nav-links {
+    display: none;
+  }
+
+  .nav-links.active {
+    display: flex;
+    flex-direction: column;
+
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+
+    background: #111;
+    padding: 20px;
+
+    border-top: 1px solid #222;
+    gap: 20px;
+
+    text-align: center;
+  }
+
+  .navbar-container {
+    position: relative;
+  }
+}
 
 @media (max-width: 768px) {
 
