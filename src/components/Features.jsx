@@ -1,40 +1,49 @@
 import "./Features.css";
 
+import {
+  FaGlobe,
+  FaChartLine,
+  FaMobileAlt,
+  FaPalette,
+  FaSearch,
+  FaRobot,
+} from "react-icons/fa";
+
 function Features() {
   const features = [
     {
       title: "Website Audit",
-      icon: "🌐",
+      icon: <FaGlobe />,
       description:
         "Analyze performance, mobile responsiveness, user experience and conversion opportunities.",
     },
     {
       title: "SEO Analysis",
-      icon: "📈",
+      icon: <FaChartLine />,
       description:
         "Evaluate keywords, technical SEO, rankings and visibility across search engines.",
     },
     {
       title: "Social Media Review",
-      icon: "📱",
+      icon: <FaMobileAlt />,
       description:
         "Measure engagement, posting consistency, audience growth and content effectiveness.",
     },
     {
       title: "Brand Consistency",
-      icon: "🎨",
+      icon: <FaPalette />,
       description:
         "Review branding, messaging and visual consistency across digital channels.",
     },
     {
       title: "Competitor Benchmarking",
-      icon: "🔍",
+      icon: <FaSearch />,
       description:
         "Compare your online presence against competitors in your industry.",
     },
     {
       title: "AI Recommendations",
-      icon: "🤖",
+      icon: <FaRobot />,
       description:
         "Receive personalized recommendations and a clear action plan for improvement.",
     },
