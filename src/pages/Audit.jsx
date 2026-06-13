@@ -24,22 +24,41 @@ function Audit() {
     });
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+ const handleSubmit = (e) => {
+   e.preventDefault();
 
-    const reportId = `SA-${Date.now()}`;
+   let website = formData.website.trim();
 
-    localStorage.setItem("reportId", reportId);
+   if (
+     website &&
+     !website.startsWith("http://") &&
+     !website.startsWith("https://")
+   ) {
+     website = `https://${website}`;
+   }
 
-    localStorage.setItem("auditData", JSON.stringify(formData));
+   const updatedFormData = {
+     ...formData,
+     website,
+   };
 
-    navigate("/loading");
-    
-  };
+   const reportId = `SA-${Date.now()}`;
+
+   localStorage.setItem("reportId", reportId);
+
+   localStorage.setItem("auditData", JSON.stringify(updatedFormData));
+
+   navigate("/loading");
+ };
   
   return (
     <div className="audit-page">
       <div className="audit-container">
+        {/* <div className="audit-nav">
+          <Link to="/" className="back-link">
+            ← Back to Home
+          </Link>
+        </div> */}
         <div className="audit-header">
           <h1>Analyze Your Business Performance</h1>
 
@@ -102,7 +121,7 @@ function Audit() {
               <input
                 type="url"
                 name="website"
-                placeholder="https://yourwebsite.com"
+                placeholder="www.yourbusiness.com"
                 value={formData.website}
                 onChange={handleChange}
               />
